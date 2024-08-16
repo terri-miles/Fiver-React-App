@@ -1,0 +1,47 @@
+.catCard {
+  width: 252px;
+  height: 344px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+
+  .img_div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+    }
+
+    .overlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: .3);
+        position: absolute;
+        z-index: 20;
+    }
+    
+  }
+
+  .desc {
+    font-weight: 300;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 50;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 24px;
+    position: absolute;
+    top: 45px;
+    left: 15px;
+    z-index: 50;
+  }
+}
